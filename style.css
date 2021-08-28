@@ -152,4 +152,31 @@ svg{
   50%{background-position:100% 82%}
   100%{background-position:0% 19%}
 }
+.hero-image img {
+  height: 400px;
+  width: auto;
+}
+@media only screen and (max-width: 600px) {
+  .hero-image img {
+    height: 300px;
+    width: auto;
+  }
+}
 
+
+
+/* card css  */
+.card-title{
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  
+}
+.card-content{
+  font-size: 14px;
+}
+
+.card-image img{
+  margin:0;
+  padding: 0;
+  border-radius: 6px;
+}
