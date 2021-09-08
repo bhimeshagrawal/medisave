@@ -1,0 +1,27 @@
+in app.html
+
+structure is as 
+left-side-navbar, main-view-block , right-side-navbar
+
+in main-view-block
+|
+|- navbar
+|
+|- recent-files-block
+|               |
+|               |- title
+|               |
+|               |-files group
+|                       |
+|                       |- 4 * files
+|                       |
+|
+|- folders-block ( different types of folders as prescription .. )
+|               |
+|               |- title
+|               |
+|               |-folders group
+|                       |
+|                       |- 4 * folders
+|                       |
+|
