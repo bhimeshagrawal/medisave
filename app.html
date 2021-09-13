@@ -16,15 +16,17 @@
 </head>
 
 <body>
-    <div class="p-3" style=" background-color:#f4f7fa;">
-        <div class="row">
-            <div class="left-side-navbar col-md-2">
+    <div class="p-3" style="background-color:#f4f7fa;">
+        <div class="d-flex justify-content-around">
+            <div class="left-side-navbar">
+                <div class="cancel-btn"><i class="bi bi-x"></i></div>
                 <div class="">
                     <div class="logo d-flex justify-content-center mt-3">
-                        <img src="images/Netguru_Avatars_Pack/Svg/Artboards_Diversity_Avatars_by_Netguru-04.svg" height="150px" width="auto" alt="">
+                        <img src="images/Netguru_Avatars_Pack/Svg/Artboards_Diversity_Avatars_by_Netguru-04.svg"
+                            height="150px" width="auto" alt="">
                     </div>
                     <div class="title-text text-center fs-4">MediSave+</div>
-                    <div class="tab-group d-block d-flex justify-content-column">
+                    <div class="tab-group">
                         <div class="tab"><i class="bi bi-hdd"></i> &nbsp; My Files</div>
                         <div class="tab"><i class="bi bi-download"></i> &nbsp; Downloads</div>
                         <div class="tab"><i class="bi bi-clock"></i> &nbsp; Recents</div>
@@ -34,131 +36,98 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-7 center-side-block">
-                <div class="main-file-view-block" style="margin:15px;">
+            <div class="center-side-block">
+                <div class="main-file-view-block" style="">
                     <div class="navbar d-flex justify-content-start">
+                        <button class="mx-3 menu-btn"><i class="bi bi-list"></i></button>
                         <div class="search">
                             <input type="text" placeholder="Search">
                             <button style="margin: 7px;"><i class="bi bi-search"></i></button>
                         </div>
                         <div class="button-group ms-auto">
                             <button class="mx-3"><i class="bi bi-funnel"></i> Filters</button>
-                            <button><i class="bi bi-bell"></i></button>
+                            <button class=""><i class="bi bi-bell"></i></button>
+                            <button class="mx-3"><i class="bi bi-person"></i></button>
                         </div>
                     </div>
-                    <div class="folders-block">
-                        <div class="title fs-6 title-text">Recent Files</div>
-                        <hr>
-                        <div class="folder-group mb-5 d-flex flex-wrap justify-content-between">
-                            <div class="folder">
-                                <img src="images/file icons/file-svgrepo-com (1).svg" alt="">
-                                <div class="title-text">Name-1</div>
-                                <div class="text-muted small-text">05-09-2021</div>
-                            </div>
-                            <div class="folder">
-                                <img src="images/file icons/file-svgrepo-com (2).svg" alt="">
-                                <div class="title-text">Name-2</div>
-                                <div class="text-muted small-text">05-09-2021</div>
-                            </div>
-                            <div class="folder">
-                                <img src="images/file icons/file-svgrepo-com.svg" alt="">
-                                <div class="title-text">Name-3</div>
-                                <div class="text-muted small-text">05-09-2021</div>
-                            </div>
-                            <div class="folder">
-                                <img src="images/file icons/image-svgrepo-com.svg" alt="">
-                                <div class="title-text">Name-4</div>
-                                <div class="text-muted small-text">05-09-2021</div>
+                    <div class="d-flex flex-wrap justify-content-evenly">
+                        <div class="folders-block">
+                            <div class="title fs-6 title-text">Recent Files</div>
+                            <hr>
+                            <div class="folder-group d-flex flex-wrap justify-content-between">
+                                <div class="file-folder-card">
+                                    <img src="images/file icons/file-svgrepo-com (2).svg" alt="">
+                                    <div class="title-text">Name-1</div>
+                                    <div class="text-muted small-text">05-09-2021</div>
+                                </div>
+                                <div class="file-folder-card">
+                                    <img src="images/file icons/file-svgrepo-com (2).svg" alt="">
+                                    <div class="title-text">Name-2</div>
+                                    <div class="text-muted small-text">05-09-2021</div>
+                                </div>
+                                <div class="file-folder-card">
+                                    <img src="images/file icons/file-svgrepo-com (2).svg" alt="">
+                                    <div class="title-text">Name-3</div>
+                                    <div class="text-muted small-text">05-09-2021</div>
+                                </div>
+                                <div class="file-folder-card">
+                                    <img src="images/file icons/file-svgrepo-com (2).svg" alt="">
+                                    <div class="title-text">Name-4</div>
+                                    <div class="text-muted small-text">05-09-2021</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="folders-block">
-                        <div class="title fs-6 title-text">Categories</div>
-                        <hr>
-                        <div class="folder-group d-flex flex-wrap justify-content-between">
-                            <div class="folder">
-                                <img src="images/folder.svg" alt="">
-                                <div class="title-text">Prescriptions</div>
-                                <div class="text-muted small-text">101 files | 1.2GB</div>
+                        <div class="folders-block">
+                            <div class="title fs-6 title-text">Categories</div>
+                            <hr>
+                            <div class="folder-group d-flex flex-wrap justify-content-between">
+                                <div class="file-folder-card">
+                                    <img src="images/folder.svg" alt="">
+                                    <div class="title-text">Prescriptions</div>
+                                    <div class="text-muted small-text">101 files | 1.2GB</div>
+                                </div>
+                                <div class="file-folder-card">
+                                    <img src="images/folder.svg" alt="">
+                                    <div class="title-text">Reports</div>
+                                    <div class="text-muted small-text">101 files | 1.2GB</div>
+                                </div>
+                                <div class="file-folder-card">
+                                    <img src="images/folder.svg" alt="">
+                                    <div class="title-text">Bills</div>
+                                    <div class="text-muted small-text">101 files | 1.2GB</div>
+                                </div>
+                                <div class="file-folder-card">
+                                    <img src="images/folder.svg" alt="">
+                                    <div class="title-text">Recipts</div>
+                                    <div class="text-muted small-text">101 files | 1.2GB</div>
+                                </div>
                             </div>
-                            <div class="folder">
-                                <img src="images/folder.svg" alt="">
-                                <div class="title-text">Reports</div>
-                                <div class="text-muted small-text">101 files | 1.2GB</div>
+                        </div>
+                        <div class="upload-block">
+                            <div class=" title text-center mt-2 fs-6 mx-5 title-text">Upload File &nbsp;&nbsp;<button
+                                    class="ui-control-btn upload-menu-dropdown-btn"><i
+                                        class="bi bi-caret-up-fill"></i></button>
                             </div>
-                            <div class="folder">
-                                <img src="images/folder.svg" alt="">
-                                <div class="title-text">Bills</div>
-                                <div class="text-muted small-text">101 files | 1.2GB</div>
-                            </div>
-                            <div class="folder">
-                                <img src="images/folder.svg" alt="">
-                                <div class="title-text">Recipts</div>
-                                <div class="text-muted small-text">101 files | 1.2GB</div>
+                            <div class=" mx-2 upload-window folder-group">
+                            <hr>
+
+                                <form action="post">
+                                    <div><input type="text" placeholder="Enter Disease name"></div>
+                                    <div><input type="date" name="" id=""></div>
+                                    <div class="file-input"><input type="file" name="" id=""
+                                            accept="image/x-png,image/jpeg,application/pdf"></div>
+                                    <div class="small-text text-muted">* Only img and pdf files are supported</div>
+                                    <div class="my-4"><button class="btn btn-primary">Upload</button></div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="right-side-navbar col-md-3">
-                <div class="profile-block d-flex mt-5 mb-4">
-                    <div class="user-img m-1"><img
-                            src="images/Netguru_Avatars_Pack/Svg/Artboards_Diversity_Avatars_by_Netguru-07.svg" alt=""
-                            height="50px" width="auto"></div>
-                    <div class="user-details m-2 mx-0">
-                        <div class="user-name title-text">Bhimesh Agrawal</div>
-                        <div class="user-email small-text">random@gmail.com</div>
-                    </div>
-                    <div class="logout-block ms-auto">
-                        <div class="invisible">Logout</div>
-                        <div ><i class="bi bi-box-arrow-right"></i></div>
-                    </div>
-                </div>
-                <div class="d-lg-flex justify-content-column flex-wrap">
-                <div class="storage-chart-block">
-                    <div class="title-text fs-5 text-center">My Storage</div>
-                    <div class="progress-bars my-3">
-                        <div> Prescription</div>
-                        <div class="progress my-2">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                aria-valuemax="100" style="width:70%">
-                                <!-- <span class="sr-only">70% filled</span> -->
-                            </div>
-                        </div>
-                        <div> Reports</div>
-                        <div class="progress my-2">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0"
-                                aria-valuemax="100" style="width:20%">
-                            </div>
-                        </div>
-                        <div> Bills</div>
-                        <div class="progress my-2">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                aria-valuemax="100" style="width:80%">
-                            </div>
-                        </div>
-                        <div> Recipts</div>
-                        <div class="progress my-2">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                                aria-valuemax="100" style="width:50%">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="upload-block">
-                    <form action="post">
-                        <div class="title-text fs-5 text-center">Upload File &nbsp;&nbsp;&nbsp;&nbsp; <span class="upload-block-dropdown-btn "><i class="bi bi-caret-up rotate"></i></span></div>
-                        <div><input type="text" placeholder="Enter Disease name"></div>
-                        <div><input type="date" name="" id=""></div>
-                        <div class="file-input"><input type="file" name="" id=""
-                                accept="image/x-png,image/jpeg,application/pdf"></div>
-                        <div class="small-text text-muted">* Only img and pdf files are supported</div>
-                        <div class="my-4"><button class="btn btn-primary">Upload</button></div>
-                    </form>
-                </div>
-            </div>
-            </div>
+
         </div>
+    </div>
+    </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="app.js"></script>
