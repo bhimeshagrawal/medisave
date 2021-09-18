@@ -1,14 +1,23 @@
+var express = require('express');
+var app = express();
+const path = require('path')
 
-$(".upload-menu-dropdown-btn").click(function(){
-    $(".upload-window").toggleClass("showme");
-    $(".upload-menu-dropdown-btn").toggleClass("rotate")
+app.listen(3000,function(){
+    console.log("Server is started");
 })
-$(".menu-btn").click(function(){
-    $(".left-side-navbar").toggleClass("showmenu");
-    $(".cancel-btn").toggleClass("showme");
+
+app.use(express.static("public"));
+app.use('/static', express.static(path.join(__dirname, 'public')))
+app.set("view engine", "ejs")
+
+app.get('/',function(req,res){
+    res.render("index");
 })
-$(".cancel-btn").click(function(){
-    $(".left-side-navbar").toggleClass("showmenu");
-    $(".cancel-btn").toggleClass("showme");
-    
+
+app.get('/files',function(req,res){
+    res.render("files");
+})
+
+app.get("*",function(req,res){
+    res.send("Page not found");
 })
